@@ -1,0 +1,141 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f1f5f9;
+  color: #1e293b;
+}
+
+/* Header */
+header{
+  background-color: #075e54;
+  color: white;
+  text-align: center;
+  padding: 25px 15px;
+  width: 100%;
+}
+header h1{
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+header p{
+  font-size: 16px;
+}
+
+/* Main Content */
+main{
+  width: 100%;
+  max-width: 650px;
+  margin: 25px auto;
+  padding: 0, 15px;
+}
+
+/* Section */
+section{
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px #ccc;
+  width: 100%;
+  min-width: 0;
+}
+
+/* Heading */
+h2{
+  color: #075e54;
+  font-size: 23px;
+}
+
+/* Financial Summary */
+.summary p{
+  background-color: #ecfdf5;
+  padding: 12px;
+  border-radius: 5px;
+}
+
+/* Form */
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+label{
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+input,
+select{
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  background: white;
+}
+
+button{
+  width: 100%;
+  padding: 14px;
+  margin-top: 12px;
+  background-color: #075e54;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover{
+  background-color: #064e3b;
+}
+
+/* Transaction */
+#transaction{
+padding-left: 20px;
+}
+
+#transactionList li{
+  margin-bottom: 10px;
+  overflow-wrap: anywhere;
+}
+
+/* Footer */
+footer{
+  background-color: #075e54;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+/* Responsive Design */
+@media (max-height: 480px){
+  header h1{
+    font-size: 23px;
+  }
+  
+  main{
+    padding: 0 12px;
+  }
+  
+  section{
+    padding: 16px;
+  }
+  
+  h2{
+    font-size: 20px;
+  }
+  
+  input,
+  select,
+  button{
+    font-size: 16px;
+  }
+}
